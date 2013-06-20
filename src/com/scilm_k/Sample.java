@@ -1,21 +1,17 @@
-package jp.ac.ynu.pjl;
+package com.scilm_k;
 
 import java.util.List;
 import java.util.Random;
 
 /**
- * Created with IntelliJ IDEA.
- * User: kosasa
- * Date: 2013/06/20
- * Time: 14:54
- * To change this template use File | Settings | File Templates.
+ * mainクラス
  */
 public class Sample {
     public static void main(String[] args) {
         try {
             DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
             long id = databaseConnection.insertNewUser("テスト5");
-            for (int i = 0; i < 2; ++i) {
+            for (int i = 0; i < 50; ++i) {
                 Random random = new Random();
                 int point = random.nextInt(100);
                 databaseConnection.insertNewPoint(id, point);

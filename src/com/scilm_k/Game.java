@@ -1,13 +1,9 @@
-package jp.ac.ynu.pjl;
+package com.scilm_k;
 
 import java.io.Serializable;
 
 /**
- * Created with IntelliJ IDEA.
- * User: kosasa
- * Date: 2013/06/20
- * Time: 17:11
- * To change this template use File | Settings | File Templates.
+ * ゲームの点数と、ユーザの名前を保持するクラス
  */
 public class Game implements Serializable{
     private int point;
